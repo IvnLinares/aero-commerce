@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+/* ── Apple-esque utilities ── */
+.apple-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.apple-btn-primary {
+  background: #000000;
+  color: white;
+  border-radius: 980px;
+  font-weight: 500;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.apple-btn-secondary {
+  background: rgba(0, 0, 0, 0.05);
+  color: #1d1d1f;
+  border-radius: 980px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.apple-glass-nav {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Subtle border */
+}
+
+.apple-input {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  transition: background 0.2s;
+}
