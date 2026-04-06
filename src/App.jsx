@@ -92,9 +92,9 @@ function Footer() {
       <div className="py-12 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { title: 'Shop and Learn', links: ['Store', 'Mac', 'iPad', 'iPhone', 'Watch', 'Accessories'] },
-            { title: 'Services', links: ['Apple Music', 'Apple TV+', 'Apple Fitness+', 'Apple News+', 'Apple Podcasts'] },
-            { title: 'Account', links: ['Manage Your Apple ID', 'Apple Store Account', 'iCloud.com'] },
+            { title: 'Shop and Learn', links: ['Store', 'Aero Pro', 'Aero Air', 'Collections', 'Deals'] },
+            { title: 'Services', links: ['Aero Music', 'Aero TV+', 'Aero Cloud', 'Order Status', 'Shipping & Returns'] },
+            { title: 'Account', links: ['Manage Account', 'Order History', 'Wishlist', 'Settings'] },
             { title: 'About AeroCommerce', links: ['Newsroom', 'Leadership', 'Career Opportunities', 'Investors', 'Ethics & Compliance', 'Events'] },
           ].map((col) => (
             <div key={col.title}>
@@ -110,7 +110,11 @@ function Footer() {
           ))}
         </div>
         <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="text-[#86868b] text-xs">Copyright © 2026 AeroCommerce Inc. All rights reserved.</span>
+          <span className="text-[#86868b] text-xs">
+            Copyright © 2026 AeroCommerce Inc. All rights reserved. 
+            <span className="mx-2 text-black/10">|</span> 
+            Desarrollado por <a href="https://ivnlinares.com/" target="_blank" rel="noopener noreferrer" className="text-[#0071e3] font-medium hover:underline no-underline decoration-2">IvnLinares</a> – Ejemplo de frontend de ecommerce
+          </span>
           <div className="flex gap-4">
             <a href="#" className="text-[#515154] hover:text-[#1d1d1f] text-xs no-underline">Privacy Policy</a>
             <div className="w-px h-3 bg-black/10 my-auto" />
